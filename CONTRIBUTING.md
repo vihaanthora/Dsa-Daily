@@ -1,14 +1,20 @@
-## How to Contribute
-### 1. Pick an issue to fix
-The best way to start with the main code base is to fix some existing bugs. Peruse the Easy to fix issues in the issue tracker and see if one interests you. If you'd like to try to fix it, then create a message in the issue saying that you'd like to work on it. If it isn't clear how to fix it, ask for suggestions on how to do it in the issue itself, on the mailing list, or on Gitter sympy/sympy.
+## Contributing Guidelines
+You can contribute to this repository in the following ways.
+### Adding Code
+Code files can be added/updated in order to add a new feature, fix bugs or add comments. Here are some tips to get started - 
+1. **Pick an issue** - navigate to the issues tab of the repository, where you'll find some existing issues/requirements. You can read the description and let the issue creator know that you are interested in solving the issue. Feel free to ask for more information as and when you find necessary.
+1. **Fork the repo** - unless you are a maintainer, you won't be allowed to push code directly. You will need to create a fork, wherein you can push your changes, and then synchronize them by creating a pull request (PR).
+1. **Create a branch** - never forget to create a new branch while sending a PR!
+1. **Send a PR** - make your PRs stand out by adding a suitable description and the list of tasks that you wish accomplish in that particular PR.
 
-SymPy's code is organized into Python packages and modules. The core code is in the sympy/core directory and other packages in the sympy directory have more specific code, for example sympy/printing handles how SymPy objects are printed to the terminal, in IPython notebooks, or in our web applications.
+To familiarise yourself with the git workflow, here is a good reference [source](https://musescore.org/en/handbook/developers-handbook/finding-your-way-around/git-workflow).
 
-If you are looking for a somewhat larger project to implement, check out the Project General Ideas page. This page is a collection of projects that contributors have come up with but have not yet had the time or opportunity to implement themselves.
-
-Create an issue if there isn't one for what you want to do.
-
-### 2. Create a new branch.
-### 3. Modify code and/or create tests of it.
-### 5. Only then commit the changes.
-### 7. Create a patch file or pull request for GitHub
+### Documentation
+Every code base requires a good documentation so that new contributors are able to understand what's written in an effective manner. Documentation is mainly present in the `README`, and also in other places depending on the nature of the repository. You can help us by improving the documentation in the following ways.
+1. Adding missing documentation
+1. Fixing typos
+1. Adding comments to the code body
+### Identifying Bugs
+If you find bugs in running our code, please raise an issue in the GitHub issues section. You can follow the default template provided by us to get a good starting point. You can also create issues if you wish to add a new feature to the existing code base. Note that we only accept PRs that have an associated issue on GitHub. If you want help in implementing a feature, feel free to contact us on our community channels.
+### Writing Tests
+Larger code bases require some predefined tests that it must pass in order to let the repository maintainer know that the code which is being merged works does not disturb the application workflow.
